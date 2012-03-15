@@ -5,7 +5,7 @@
             duration: 1000,
             complete: $.noop,
             wrapperTagName: "div",
-            wrapperDisplay: "inline-block",
+            wrapperDisplay: $(replacement).css("display"),
             useCssTransitions: true
         }, options);
         
