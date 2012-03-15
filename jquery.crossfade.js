@@ -32,7 +32,7 @@
                 this.style.background = "#fff";
             }
             
-            var _this = this;
+            var self = this;
             var $this = $(this);
             var $replacement = $(replacement);
             
@@ -54,7 +54,7 @@
             var complete = function(){
                 $thisOverlay.remove();
                 $replacementOverlay.unwrap().children().unwrap();
-                options.complete.call(this);
+                options.complete.call(self);
             };
             
             if(useCssTransitions){
