@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="../jquery.crossfade.js" type="text/javascript"></script>
+    
+    <style type="text/css">
+        .box{width:100px; height:100px;}
+        .box1{background-color:red;}
+        .box2{background-color:blue;}
+    </style>
+</head>
+<body>
+    <div id="box" class="box box1"></div>
+    
+    <p><button onclick="return runTest(this)">Crossfade</button></p>
+    
+    <script type="text/javascript">
+        function runTest(button){
+            $("#box").crossfade("<div class=\"box box2\"></div>");
+
+        }
+    </script>
+</body>
+</html>
